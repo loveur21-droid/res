@@ -1,3 +1,4 @@
+body { background-color: rgba(0, 0, 0, 0)!important; margin: 0px auto; overflow: hidden;}
 /* 親要素（bodyやhtml）の余白をリセット */
 html, body {
     margin: 0;
@@ -15,3 +16,7 @@ iframe {
     left: 0;
     z-index: 9999; /* 他の要素より前面に */
 }
+#firstmessage{display:none;}
+.resnum{font-size: 1.5em; color: #ff0000; font-weight: bold; -webkit-text-stroke: 1px #000000;}
+.datetime{display:none!important;}
+.media-body{font-size: 1.5em; color: #ffffff; font-weight: bold; -webkit-text-stroke: 1px #000000;}
