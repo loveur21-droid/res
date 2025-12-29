@@ -1,12 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height:100vh;
+/* 親要素（bodyやhtml）の余白をリセット */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* スクロールバー非表示 */
+    height: 100%;
 }
 
 iframe {
-  border:none;
-  width:100%;
-  height:100%;
+    width: 100vw; /* ビューポート幅全体 */
+    height: 100vh; /* ビューポート高さ全体 */
+    border: none; /* 境界線を消す */
+    position: fixed; /* 画面に固定 */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* 他の要素より前面に */
 }
